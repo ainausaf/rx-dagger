@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/resImage"
+        android:layout_width="112dp"
+        android:layout_height="107dp"
+        android:src="@android:drawable/picture_frame"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/resName"
+        android:layout_width="105dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="20dp"
+        android:text="Amrin Thai"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/resImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resButton"
+        android:layout_width="91dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="80dp"
+        android:gravity="end"
+        android:text="Like"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintLeft_toRightOf="@+id/resName"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
